@@ -1,0 +1,17 @@
+{
+  "name": "Remove Background",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Removes background for vjudge.net",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://vjudge.net/*"],
+      "js": ["src/content.js"]
+    }
+  ]
+}
